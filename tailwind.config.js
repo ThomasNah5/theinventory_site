@@ -11,6 +11,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        ebgaramond: ['Host Grotesk', 'serif'],
         ebgaramond: ['EB Garamond', 'serif'],
       },
     },

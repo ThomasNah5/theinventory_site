@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white">
     <!-- Hero Section -->
 
-    
+
     <section class="pt-44 pb-16 bg-transparent text-black">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-6xl lg:text-8xl font-bold mb-12">
@@ -84,8 +84,9 @@
         <h2 class="text-5xl lg:text-7xl font-bold mb-16">Our Principles</h2>
         <div class="max-w-3xl mb-16">
           <p class="text-xl lg:text-2xl leading-relaxed">
-            In building great products, we place the way they impact users at the forefront.<br/> 
-            We prioritize understanding their needs, considering their context, and designing solutions that empower and resonate with their
+            In building great products, we place the way they impact users at the forefront.<br />
+            We prioritize understanding their needs, considering their context, and designing solutions that empower and
+            resonate with their
             everyday lives.
           </p>
         </div>
@@ -121,6 +122,18 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-8">Ready to start your project?</h2>
+        <div class="relative inline-block">
+          <div class="absolute inset-0 bg-black rounded-md transform translate-x-1 translate-y-1"></div>
+          <NuxtLink to="/contact"
+            class="relative px-8 py-4 rounded-md bg-orange-400 text-white hover:bg-primary/90 transition-colors block">
+            Get In Touch
+          </NuxtLink>
         </div>
       </div>
     </section>

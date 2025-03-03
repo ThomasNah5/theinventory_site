@@ -35,6 +35,7 @@
       </div> -->
     </div>
   </div>
+  <HitUs />
   <AppFooter />
 </template>
 
