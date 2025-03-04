@@ -5,7 +5,7 @@
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <NuxtLink to="/index" class="block w-20 lg:w-24  lg: pt-6">
+            <NuxtLink to="/" class="block w-20 lg:w-24  lg: pt-6">
               <img src="./public/img/inventory_logo.png" alt="">
             </NuxtLink>
           </div>
@@ -18,16 +18,14 @@
               <NuxtLink to="/about" class="text-gray-700 hover:text-primary font-medium">About Us</NuxtLink>
             </div>
           </div>
-          
+
 
           <!-- Right Button -->
           <div class="relative hidden md:block">
             <!-- Black background perspective -->
-         
-            <NuxtLink 
-              to="/contact"
-              class="relative px-4 py-2 rounded-md bg-orange-400 text-white hover:bg-primary/90 transition-colors block text-center"
-            >
+
+            <NuxtLink to="/contact"
+              class="relative px-4 py-2 rounded-md bg-orange-400 text-white hover:bg-primary/90 transition-colors block text-center">
               Get In Touch
             </NuxtLink>
           </div>
