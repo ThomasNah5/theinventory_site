@@ -53,12 +53,12 @@
             <p class="text-xl text-gray-600">
               We deliver robust, software tailored to your requirements. Specializing in full lifecycle
               development, we build secure mobile apps and custom solutions.
+            </p>
             <p>
               <NuxtLink to="/software"
                 class="mt-2 inline-flex space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
                 <p class="text-xl lg:text-xl underline">Learn More→</p>
               </NuxtLink>
-            </p>
             </p>
           </div>
 
