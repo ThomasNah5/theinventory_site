@@ -156,7 +156,7 @@
             </div>
 
             <NuxtLink to="/services"
-              class="inline-flex py-32 space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
+              class="inline-flex py-24 space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
               <p class=" text-xl lg:text-2xl underline">Explore our services→</p>
             </NuxtLink>
           </div>
@@ -165,9 +165,18 @@
     </section>
 
     <!-- Contact Section -->
-    <HitUs />
-    <AppFooter />
+    <div class="text-center mb-12">
+      <h1 class="text-6xl font-bold mb-4">WE'D LOVE TO HEAR FROM YOU</h1>
+      <p class="text-xl text-gray-600">
+        Have a project in mind? Reach out—we're here to help.
+      </p>
+    </div>
+    <div>
+      <HitUs />
+    </div>
+
   </div>
+  <AppFooter />
 </template>
 
 <script setup>
