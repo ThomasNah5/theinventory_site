@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-x-hidden max-w-full w-full">
     <!-- Hero Section -->
     <section class="bg-hero relative min-h-screen flex items-center bg-[url(./img/bg-hero.png)]">
       <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-44 pb-20">
@@ -39,7 +39,7 @@
             <div class="flex lg:ml-40 md:ml-32">
               <img class="sm:w-20 md:w-32 lg:w-32 h-40" src="../public/img/avatars/guy1.png" alt="">
               <img class="sm:w-20 lg:w-32 h-40 md:hidden" src=" ../public/img/avatars/guy2.png" alt="">
-              <img class="sm:w-20 lg:w-32 md:w-32 h-40 " src=" ../public/img/avatars/guy2.png" alt="">
+              <img class="sm:w-20 lg:w-32 md:w-32 h-40 " src=" ../public/img/avatars/guy3.png" alt="">
               <img class="hidden sm:block   lg:w-32 h-40" src=" ../public/img/avatars/guy4.png" alt="">
               <img class="hidden sm:block  lg:w-32 h-40" src=" ../public/img/avatars/guy5.png" alt="">
             </div>
@@ -156,7 +156,7 @@
             </div>
 
             <NuxtLink to="/services"
-              class="inline-flex py-32 space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
+              class="inline-flex py-24 space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
               <p class=" text-xl lg:text-2xl underline">Explore our services→</p>
             </NuxtLink>
           </div>
@@ -165,9 +165,18 @@
     </section>
 
     <!-- Contact Section -->
-    <HitUs />
-    <AppFooter />
+    <div class="text-center mb-12">
+      <h1 class="text-6xl font-bold mb-4">WE'D LOVE TO HEAR FROM YOU</h1>
+      <p class="text-xl text-gray-600">
+        Have a project in mind? Reach out—we're here to help.
+      </p>
+    </div>
+    <div>
+      <HitUs />
+    </div>
+
   </div>
+  <AppFooter />
 </template>
 
 <script setup>
