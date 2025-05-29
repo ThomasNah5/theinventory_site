@@ -202,9 +202,4 @@ html {
   scroll-behavior: smooth;
 }
 
-.bg-hero{
-  background-image: ;
-}
-
-
 </style>
