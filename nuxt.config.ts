@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   components: [
@@ -38,11 +39,12 @@ export default defineNuxtConfig({
     "nuxt-anchorscroll",
   ],
   css: ["~/assets/css/main.css"],
+
+  vite: { plugins: [tailwindcss()] },
+
   postcss: {
     plugins: {
-      tailwindcss: {},
       autoprefixer: {},
     },
   },
 });
-

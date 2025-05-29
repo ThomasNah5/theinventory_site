@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white">
     <!-- Hero Section -->
-    
+
     <section class="pt-44 pb-16 text-black">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-6xl lg:text-9xl font-bold mb-12">
@@ -37,12 +37,11 @@
               We focus on clarity and purpose. By analyzing user needs and business objectives, we design interfaces
               that prioritize functionality and ease of use. Our process—research, wireframes, prototypes—ensures
               alignment with your goals before development begins.
-            <p>
+              <br />
               <NuxtLink to="/design"
                 class="mt-2 inline-flex space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
                 <p class="text-xl lg:text-xl underline">Learn More→</p>
               </NuxtLink>
-            </p>
             </p>
 
           </div>
@@ -53,12 +52,11 @@
             <p class="text-xl text-gray-600">
               We deliver robust, software tailored to your requirements. Specializing in full lifecycle
               development, we build secure mobile apps and custom solutions.
-            <p>
+              <br />
               <NuxtLink to="/software"
                 class="mt-2 inline-flex space-x-2 text-primary font-medium hover:text-primary/80 transition-colors">
                 <p class="text-xl lg:text-xl underline">Learn More→</p>
               </NuxtLink>
-            </p>
             </p>
           </div>
 
@@ -73,7 +71,7 @@
 
 
     <!-- CTA Section -->
-    
+
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-4xl font-bold mb-8">Ready to start your project?</h2>

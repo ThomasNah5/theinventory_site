@@ -63,7 +63,7 @@
       <NuxtPage />
     </main>
 
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
