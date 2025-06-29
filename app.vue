@@ -13,6 +13,7 @@
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center justify-center flex-1 px-16">
             <div class="flex items-center space-x-16">
+              <NuxtLink to="/" class="text-gray-700 hover:text-primary font-medium">Home</NuxtLink>
               <NuxtLink to="/services" class="text-gray-700 hover:text-primary font-medium">Services</NuxtLink>
               <NuxtLink to="/work" class="text-gray-700 hover:text-primary font-medium">Our Work</NuxtLink>
               <NuxtLink to="/about" class="text-gray-700 hover:text-primary font-medium">About Us</NuxtLink>
