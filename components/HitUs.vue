@@ -33,6 +33,9 @@
           <select name="budget"
             class="w-full py-2 rounded border border-gray-200 focus:border-gray-400 focus:ring-0 outline-none transition-colors text-sm">
             <option value="">Please Select</option>
+            <option value="0-1k">$0 - $1,000</option>
+            <option value="1-5k">$1,000 - $5,000</option>
+            <option value="5-10k">$5,000 - $10,000</option>
             <option value="10-25k">$10,000 - $25,000</option>
             <option value="25-50k">$25,000 - $50,000</option>
             <option value="50-100k">$50,000 - $100,000</option>

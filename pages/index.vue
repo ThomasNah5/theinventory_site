@@ -176,12 +176,9 @@
     </div>
 
   </div>
-  <AppFooter />
 </template>
 
 <script setup>
-import { AppFooter } from '#components'
-
 const formData = ref({
   email: '',
   firstName: '',

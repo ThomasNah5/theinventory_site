@@ -6,7 +6,7 @@
         <p class="text-gray-400 text-xl">Reach out:</p>
         <a href="mailto:hello@theinventory.dev"
           class="text-4xl md:text-5xl lg:text-6xl font-bold hover:text-gray-200 transition-colors inline-flex items-center group">
-          theinventory@xyz.tech
+          info@theinventory.tech
           <span class="ml-4 transform group-hover:translate-x-2 transition-transform">→</span>
         </a>
       </div>

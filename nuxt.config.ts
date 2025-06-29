@@ -2,14 +2,13 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  components: [
-    {
-      path: "~/components",
-      pathPrefix: false,
-    },
-  ],
-  compatibilityDate: "2024-11-01",
-  devtools: { enabled: true },
+  // components: [
+  //   {
+  //     path: "~/components",
+  //     pathPrefix: false,
+  //   },
+  // ],
+  // devtools: { enabled: true },
   modules: [
     [
       "@nuxtjs/google-fonts",
@@ -38,6 +37,7 @@ export default defineNuxtConfig({
     "v-gsap-nuxt",
     "nuxt-anchorscroll",
   ],
+
   css: ["~/assets/css/main.css"],
 
   vite: { plugins: [tailwindcss()] },
@@ -47,4 +47,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  compatibilityDate: "2024-11-01",
 });
