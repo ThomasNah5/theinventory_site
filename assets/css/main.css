@@ -1,9 +1,66 @@
 @import "tailwindcss";
 
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
+/* Agrandir font family */
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-GrandHeavy.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
-body {
-      font-family: 'Host Grotesk', sans-serif;
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-GrandLight.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-TextBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-Tight.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-WideBlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('/fonts/Agrandir-Narrow.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }

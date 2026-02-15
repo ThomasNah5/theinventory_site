@@ -1,66 +1,42 @@
 <template>
-  <div class="min-h-screen bg-white">
-    <nav class="fixed w-full h-28 bg-white backdrop-blur-sm z-50">
-      <div class="max-w-9xl mx-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
-          <!-- Logo -->
-          <div class="flex-shrink-0">
-            <NuxtLink to="/" class="block w-20 lg:w-24  lg: pt-6">
-              <img src="./public/img/inventory_logo.png" alt="">
-            </NuxtLink>
-          </div>
+  <div class="min-h-screen bg-brand-beige flex flex-col">
+    <nav class="fixed w-full py-10 z-50 transition-all duration-300 bg-brand-beige/90 backdrop-blur-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <!-- Logo -->
+        <!-- <NuxtLink to="/" class="block">
+          <img src="/img/inventory_logo.png" alt="The Inventory" class="w-20" />
+        </NuxtLink> -->
 
-          <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center justify-center flex-1 px-16">
-            <div class="flex items-center space-x-16">
-              <NuxtLink to="/" class="text-gray-700 hover:text-primary font-medium">Home</NuxtLink>
-              <NuxtLink to="/services" class="text-gray-700 hover:text-primary font-medium">Services</NuxtLink>
-              <NuxtLink to="/work" class="text-gray-700 hover:text-primary font-medium">Our Work</NuxtLink>
-              <NuxtLink to="/about" class="text-gray-700 hover:text-primary font-medium">About Us</NuxtLink>
-            </div>
-          </div>
-
-
-          <!-- Right Button -->
-          <div class="relative hidden md:block">
-            <!-- Black background perspective -->
-
-            <NuxtLink to="/contact"
-              class="relative px-4 py-2 rounded-md bg-orange-400 text-white hover:bg-primary/90 transition-colors block text-center">
-              Get In Touch
-            </NuxtLink>
-          </div>
-
-          <!-- Mobile menu button -->
-          <div class="md:hidden">
-            <button @click="isOpen = !isOpen" class="p-2 rounded-md text-gray-700 hover:text-primary focus:outline-none"
-              aria-label="Toggle menu">
-              <div class="relative w-6 h-6">
-                <span class="absolute block w-6 h-0.5 bg-current transform transition duration-300" :class="[
-                  isOpen ? 'rotate-45 translate-y-0' : '-translate-y-2',
-                ]"></span>
-                <span class="absolute block w-6 h-0.5 bg-current transform transition duration-300" :class="[
-                  isOpen ? '-rotate-45' : 'translate-y-2',
-                ]"></span>
-              </div>
-            </button>
-          </div>
+        <!-- Centered Links (Tab Style) -->
+        <div class="hero-text  absolute left-1/2 transform -translate-x-1/2 hidden md:flex items-center space-x-1">
+          <NuxtLink to="/about" class="px-4 py-2 rounded-full text-sm font-medium text-brand-black transition-all " active-class="">Manifesto</NuxtLink>
+          <NuxtLink to="/join" class="px-4 py-2 rounded-full text-sm font-medium text-brand-black transition-all " active-class="">Join Us</NuxtLink>
+          <NuxtLink to="/how-we-work" class="px-4 py-2 rounded-full text-sm font-medium text-brand-black transition-all " active-class="">How we work</NuxtLink>
         </div>
+
+        <!-- Right Side (Empty for balance or Contact later) -->
+        <div class="hidden md:block w-20"></div>
+        
+         <!-- Mobile Menu Button (Simple) -->
+        <button class="md:hidden text-brand-black" @click="isMobileMenuOpen = !isMobileMenuOpen">
+            <span class="sr-only">Open menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
       </div>
-      <!-- Mobile Navigation -->
-      <div class="md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out"
-        :style="{ maxHeight: isOpen ? '400px' : '0px' }">
-        <div class="px-2 pt-2 pb-3 space-y-1 bg-white">
-          <NuxtLink to="/services" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Services
-          </NuxtLink>
-          <NuxtLink to="/work" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">Work</NuxtLink>
-          <NuxtLink to="/about" class="block px-3 py-2 text-gray-700 hover:text-primary font-medium">About Us</NuxtLink>
-          <NuxtLink to="/contact" class="block px-3 py-2 text-primary font-medium">Get In Touch</NuxtLink>
-        </div>
+      
+       <!-- Mobile Menu -->
+      <div v-if="isMobileMenuOpen" class="md:hidden absolute top-full left-0 w-full bg-brand-beige border-b border-gray-200">
+          <div class="flex flex-col p-4 space-y-4">
+              <NuxtLink to="/about" class="text-brand-black font-medium" @click="isMobileMenuOpen = false">About Us</NuxtLink>
+              <NuxtLink to="/join" class="text-brand-black font-medium" @click="isMobileMenuOpen = false">Join Us</NuxtLink>
+              <NuxtLink to="/how-we-work" class="text-brand-black font-medium" @click="isMobileMenuOpen = false">How we work</NuxtLink>
+          </div>
       </div>
     </nav>
 
-    <main>
+    <main class="flex-grow pt-28">
       <NuxtPage />
     </main>
 
@@ -69,10 +45,20 @@
 </template>
 
 <script setup>
-const isOpen = ref(false)
-
-// Close mobile menu when route changes
-watch(() => useRoute().fullPath, () => {
-  isOpen.value = false
-})
+const isMobileMenuOpen = ref(false)
 </script>
+
+<style scoped>
+.hero-text {
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-wrap: balance;
+  text-decoration: underline;
+}
+
+.hero-bold {
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 500;
+}
+</style>

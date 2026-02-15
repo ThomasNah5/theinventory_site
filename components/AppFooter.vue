@@ -1,35 +1,71 @@
 <template>
-  <footer class="bg-black text-white py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Reach out section -->
-      <div class="space-y-4">
-        <p class="text-gray-400 text-xl">Reach out:</p>
-        <a href="mailto:hello@theinventory.dev"
-          class="text-4xl md:text-5xl lg:text-6xl font-bold hover:text-gray-200 transition-colors inline-flex items-center group">
-          info@theinventory.tech
-          <span class="ml-4 transform group-hover:translate-x-2 transition-transform">→</span>
-        </a>
-      </div>
-
-      <!-- Brand description -->
-      <div class="py-6">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl max-w-3xl">
-          Building digital experiences that bring your ideas to life.
-        </h2>
-      </div>
-
-      <!-- Social Links -->
-      <div class="flex space-x-8 text-xl">
-        <a href="#" class="text-gray-400 hover:text-white transition-colors underline">Instagram</a>
-        <a href="#" class="text-gray-400 hover:text-white transition-colors underline">LinkedIn</a>
-      </div>
-
-      <!-- Copyright -->
-      <div class="pt-12 border-t border-gray-800">
-        <p class="text-gray-400 text-sm">
-          © {{ new Date().getFullYear() }} The Inventory. All rights reserved.
+  <footer
+    class="w-full py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200/50 bg-brand-beige"
+  >
+    <div
+      class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center"
+    >
+      <div class="mb-8 md:mb-0">
+        <img
+          src="/img/inventory_logo.png"
+          alt="The Inventory"
+          class="w-16 mb-4 grayscale opacity-80"
+        />
+        <p class="hero-text text-gray-600 max-w-xs leading-relaxed">
+          Building products that make people's lives better through thoughtful
+          design and exceptional craftsmanship.
         </p>
+      </div>
+
+      <div class="flex space-x-8 text-sm text-gray-600 font-sans">
+        <NuxtLink to="/about" class="hover:text-brand-black transition-colors"
+          >About Us</NuxtLink
+        >
+        <NuxtLink to="/join" class="hover:text-brand-black transition-colors"
+          >Join Us</NuxtLink
+        >
+        <NuxtLink
+          to="/how-we-work"
+          class="hover:text-brand-black transition-colors"
+          >How we work</NuxtLink
+        >
+      </div>
+
+      <div class="mt-8 md:mt-0 text-sm text-gray-500">
+        <a
+          href="mailto:hello@theinventory.studios"
+          class="hover:text-brand-black transition-colors"
+          >theinventory.studios</a
+        >
       </div>
     </div>
   </footer>
 </template>
+
+
+<script setup>
+</script>
+
+<style scoped>
+
+
+.hero-text {
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-wrap: balance;
+}
+.hero-text-links {
+    font-family: 'Agrandir', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-wrap: balance;
+    text-decoration: underline;
+}
+
+.hero-bold {
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+</style>

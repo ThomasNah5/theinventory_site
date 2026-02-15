@@ -11,11 +11,22 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        ebgaramond: ['Host Grotesk', 'serif'],
-        ebgaramond: ['EB Garamond', 'serif'],
+        'agrandir': ['Agrandir', 'sans-serif'],
+      },
+      colors: {
+        'brand-beige': '#F0EBE3',
+        'brand-orange': '#FF6B00',
+        'brand-black': '#1A1A1A',
+      },
+      fontWeight: {
+        '100': '100',
+        '400': '400',
+        '500': '500',
+        '600': '600',
+        '700': '700',
+        '900': '900',
       },
     },
   },
   plugins: [],
 }
-
