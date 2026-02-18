@@ -65,7 +65,7 @@
         v-if="isMobileMenuOpen"
         class="md:hidden absolute top-full left-0 w-full h-screen bg-white"
       >
-        <div class="flex flex-col p-8 space-y-8">
+        <div class="flex flex-col p-8 space-y-20">
           <NuxtLink
             to="/about"
             class="hero-bold text-brand-black font-bold text-5xl"
@@ -82,8 +82,13 @@
             to="/how-we-work"
             class="hero-bold text-brand-black font-bold text-5xl"
             @click="isMobileMenuOpen = false"
-            >How we work</NuxtLink
-          >
+            >How we work</NuxtLink>
+
+          <NuxtLink
+            to="/team"
+            class="hero-bold text-brand-black font-bold text-5xl"
+            @click="isMobileMenuOpen = false"
+            >Team</NuxtLink>
         </div>
       </div>
     </nav>
