@@ -65,7 +65,7 @@
         v-if="isMobileMenuOpen"
         class="md:hidden absolute top-full left-0 w-full h-screen bg-white"
       >
-        <div class="flex flex-col p-8 space-y-20">
+        <div class="flex flex-col p-8 space-y-16">
           <NuxtLink
             to="/about"
             class="hero-bold text-brand-black font-bold text-5xl"
