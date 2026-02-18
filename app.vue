@@ -63,24 +63,24 @@
       <!-- Mobile Menu -->
       <div
         v-if="isMobileMenuOpen"
-        class="md:hidden absolute top-full left-0 w-full bg-brand-beige border-b border-gray-200"
+        class="md:hidden absolute top-full left-0 w-full h-screen bg-white"
       >
-        <div class="flex flex-col p-4 space-y-4">
+        <div class="flex flex-col p-8 space-y-8">
           <NuxtLink
             to="/about"
-            class="text-brand-black font-medium"
+            class="hero-bold text-brand-black font-bold text-5xl"
             @click="isMobileMenuOpen = false"
             >About Us</NuxtLink
           >
           <NuxtLink
             to="/join"
-            class="text-brand-black font-medium"
+            class="hero-bold text-brand-black font-bold text-5xl"
             @click="isMobileMenuOpen = false"
             >Join Us</NuxtLink
           >
           <NuxtLink
             to="/how-we-work"
-            class="text-brand-black font-medium"
+            class="hero-bold text-brand-black font-bold text-5xl"
             @click="isMobileMenuOpen = false"
             >How we work</NuxtLink
           >
@@ -111,6 +111,6 @@ const isMobileMenuOpen = ref(false);
 
 .hero-bold {
   font-family: "Agrandir", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 </style>

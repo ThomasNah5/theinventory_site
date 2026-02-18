@@ -1,10 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col items-center justify-center py-16 px-4 sm:px-8 bg-[#fafafa] relative overflow-hidden">
     <div class="relative w-full max-w-5xl mx-auto p-4 sm:p-8">
-      <!-- Red Decorative Dots -->
-      <div class="absolute w-3.5 h-3.5 sm:w-5 sm:h-5 bg-[#d00] rounded-full z-0 top-[5%] left-0"></div>
-      <div class="absolute w-3.5 h-3.5 sm:w-5 sm:h-5 bg-[#d00] rounded-full z-0 top-[10%] right-[5%]"></div>
-      <div class="absolute w-3.5 h-3.5 sm:w-5 sm:h-5 bg-[#d00] rounded-full z-0 bottom-[5%] left-[10%]"></div>
 
       <!-- Team Members Grid -->
       <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-12 lg:gap-4 justify-items-center items-center relative z-10">
@@ -22,7 +18,7 @@
             />
           </div>
           <div class="absolute bottom-2 sm:bottom-2 inset-x-0 text-center opacity-90">
-            <h3 class="font-bold text-[0.75rem] sm:text-sm text-gray-800 m-0">{{ member.name }}</h3>
+            <h3 class="hero-text font-bold text-[0.75rem] sm:.hero-text-small text-gray-800 m-0 ">{{ member.name }}</h3>
             <p class="text-[0.65rem] sm:text-xs text-gray-500 m-0">{{ member.role }}</p>
           </div>
         </div>
@@ -30,11 +26,11 @@
     </div>
 
     <!-- Footer Text -->
-    <div class="mt-12 sm:mt-20 text-center font-sans text-xs sm:text-sm leading-relaxed text-black font-medium tracking-wider uppercase">
+    <!-- <div class="hero-text mt-12 sm:mt-20 text-center font-sans text-xs sm:text-sm leading-relaxed text-black font-medium tracking-wider uppercase">
       <p>THE INVENTORY TEAM</p>
-      <p>CREATIVE COLLECTIVE</p>
-      <p>EST. 2024</p>
-    </div>
+      <p>UNSHAKABLE BELIEVERS</p>
+      <p>EST. 2021</p>
+    </div> -->
   </div>
 </template>
 
@@ -78,3 +74,19 @@ const getCardClasses = (index) => {
   return transforms[index] || '';
 };
 </script>
+
+<style>
+.hero-text {
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-wrap: balance;
+}
+
+.hero-text-small {
+  font-family: 'Agrandir', sans-serif;
+  font-weight: 500;
+  font-size: 6px;
+  text-wrap: balance;
+}
+</style>
