@@ -79,7 +79,7 @@
               class="hero-bold text-brand-black font-bold text-5xl"
               @click="isMobileMenuOpen = false"
             >
-              About Us
+              Manifesto
             </NuxtLink>
             <NuxtLink
               to="/join"
