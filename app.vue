@@ -61,43 +61,50 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div
-        v-if="isMobileMenuOpen"
-        class="md:hidden absolute top-full left-0 w-full h-screen bg-white"
-      >
-        <div class="flex flex-col p-8 space-y-16">
-
-          <NuxtLink
-            to="/"
-            class="hero-bold text-brand-black font-bold text-5xl"
-            @click="isMobileMenuOpen = false"
-            >Home</NuxtLink
-          >
-          <NuxtLink
-            to="/about"
-            class="hero-bold text-brand-black font-bold text-5xl"
-            @click="isMobileMenuOpen = false"
-            >About Us</NuxtLink
-          >
-          <NuxtLink
-            to="/join"
-            class="hero-bold text-brand-black font-bold text-5xl"
-            @click="isMobileMenuOpen = false"
-            >Join Us</NuxtLink
-          >
-          <NuxtLink
-            to="/how-we-work"
-            class="hero-bold text-brand-black font-bold text-5xl"
-            @click="isMobileMenuOpen = false"
-            >How we work</NuxtLink>
-
-          <NuxtLink
-            to="/team"
-            class="hero-bold text-brand-black font-bold text-5xl"
-            @click="isMobileMenuOpen = false"
-            >Team</NuxtLink>
+      <Transition name="mobile-menu">
+        <div
+          v-if="isMobileMenuOpen"
+          class="md:hidden absolute top-full left-0 w-full h-screen bg-white"
+        >
+          <div class="flex flex-col p-8 space-y-16">
+            <NuxtLink
+              to="/"
+              class="hero-bold text-brand-black font-bold text-5xl"
+              @click="isMobileMenuOpen = false"
+            >
+              Home
+            </NuxtLink>
+            <NuxtLink
+              to="/about"
+              class="hero-bold text-brand-black font-bold text-5xl"
+              @click="isMobileMenuOpen = false"
+            >
+              About Us
+            </NuxtLink>
+            <NuxtLink
+              to="/join"
+              class="hero-bold text-brand-black font-bold text-5xl"
+              @click="isMobileMenuOpen = false"
+            >
+              Join Us
+            </NuxtLink>
+            <NuxtLink
+              to="/how-we-work"
+              class="hero-bold text-brand-black font-bold text-5xl"
+              @click="isMobileMenuOpen = false"
+            >
+              How we work
+            </NuxtLink>
+            <NuxtLink
+              to="/team"
+              class="hero-bold text-brand-black font-bold text-5xl"
+              @click="isMobileMenuOpen = false"
+            >
+              Team
+            </NuxtLink>
+          </div>
         </div>
-      </div>
+      </Transition>
     </nav>
 
     <main class="flex-grow pt-28">
@@ -124,5 +131,16 @@ const isMobileMenuOpen = ref(false);
 .hero-bold {
   font-family: "Agrandir", sans-serif;
   font-weight: 700;
+}
+
+.mobile-menu-enter-active,
+.mobile-menu-leave-active {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.mobile-menu-enter-from,
+.mobile-menu-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 </style>
