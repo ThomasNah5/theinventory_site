@@ -41,28 +41,28 @@
 <script setup>
 const teamMembers = [
   {
-    name: "Team Member Name",
-    role: "Role / Title",
+    name: "Gerold George Lloyd",
+    role: "",
     image: "/img/team/Image Dithering@2x.png"
   },
   {
-    name: "Team Member Name",
-    role: "Role / Title",
+    name: "Floyd A Morgan Jr",
+    role: "",
     image: "/img/team/Image Dithering@2x (1).png"
   },
   {
-    name: "Team Member Name",
-    role: "Role / Title",
+    name: "Alfred Jarry",
+    role: "",
     image: "/img/team/Image Dithering@2x (2).png"
   },
   {
-    name: "Team Member Name",
-    role: "Role / Title",
+    name: "Israel Sambola",
+    role: "",
     image: "/img/team/Image Dithering@2x (3).png"
   },
   {
-    name: "Team Member Name",
-    role: "Role / Title",
+    name: "Thomas Doe Nah Jr",
+    role: "",
     image: "/img/team/Image Dithering@2x (4).png"
   }
 ];
