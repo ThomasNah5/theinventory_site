@@ -1,9 +1,11 @@
 <template>
   <div class="min-h-screen relative overflow-hidden">
     <!-- Background Globe -->
+
     <div class="fixed inset-0 pointer-events-none flex items-center justify-center -z-10 opacity-20 animate-slow-spin">
-      <img src="/globe.png" alt="" class="w-full max-w-[1200px] object-contain" />
+      <img src="/globe.png" alt="" class="w-[140%] md:w-full max-w-[1200px] object-contain" />
     </div>
+
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
 
