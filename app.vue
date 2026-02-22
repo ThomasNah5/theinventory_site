@@ -28,7 +28,7 @@
             >Join Us</NuxtLink
           >
           <NuxtLink
-            to="/how-we-work"
+            to="/work"
             class="px-4 py-2 rounded-full text-sm font-medium text-brand-black transition-all"
             active-class=""
             >How we work</NuxtLink
@@ -89,7 +89,7 @@
               Join Us
             </NuxtLink>
             <NuxtLink
-              to="/how-we-work"
+              to="/work"
               class="hero-bold text-brand-black font-bold text-5xl"
               @click="isMobileMenuOpen = false"
             >
