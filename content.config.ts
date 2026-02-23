@@ -13,5 +13,14 @@ export default defineContentConfig({
         tags: z.array(z.string()).optional(),
       }),
     }),
+    products: defineCollection({
+      type: 'data',
+      source: 'products/*.json',
+      schema: z.object({
+        name: z.string(),
+        url: z.string(),
+        description: z.array(z.string()),
+      }),
+    }),
   },
 })

@@ -18,38 +18,9 @@
 </template>
 
 <script setup>
-const products = [
-  { 
-    name: 'Aether', 
-    url: 'https://github.com/theinventorylib/Aether',
-    description: ['AI powered notetaking app to manage your thoughts.']
-  },
-  { 
-    name: 'Aegis', 
-    url: 'https://example.com/dakae',
-    description: ['A lightweight authentication framework for Go with a modular plugin architecture inspired by better-auth.']
-  },
-  // { 
-  //   name: 'LinkPage', 
-  //   url: 'https://example.com/linkpage',
-  //   description: ['Your digital identity.', 'One link for everything.', 'Share with the world.']
-  // },
-  // { 
-  //   name: 'Cavalla', 
-  //   url: 'https://example.com/cavalla',
-  //   description: ['Seamless collaboration.', 'Real-time teamwork.', 'Build together, faster.']
-  // },
-  // { 
-  //   name: 'Localman', 
-  //   url: 'https://example.com/localman',
-  //   description: ['Discover your city.', 'Local recommendations.', 'Hidden gems revealed.']
-  // },
-  // { 
-  //   name: 'Kue', 
-  //   url: 'https://example.com/kue',
-  //   description: ['Task management reimagined.', 'Stay organized effortlessly.', 'Get things done.']
-  // },
-]
+const { data: products } = await useAsyncData('products', () => {
+  return queryCollection('products').all()
+})
 </script>
 
 <style scoped>

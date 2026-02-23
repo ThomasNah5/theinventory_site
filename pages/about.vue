@@ -1,14 +1,6 @@
 <template>
   <div class="bg-brand-beige min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-      
-      <!-- Logo -->
-      <div class="max-w-xl mx-auto flex justify-center">
-        <NuxtLink to="/" class="block">
-          <img src="/img/inventory_logo.png" alt="The Inventory" class="w-25" />
-        </NuxtLink>
-      </div>
-
       <!-- Content -->
       <section class="py-10 px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto space-y-12">

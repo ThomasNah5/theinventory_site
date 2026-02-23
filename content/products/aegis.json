@@ -1,0 +1,5 @@
+{
+  "name": "Aegis",
+  "url": "https://theinventorylib.github.io/aegis",
+  "description": ["A lightweight authentication framework for Go with a modular plugin architecture inspired by better-auth."]
+}

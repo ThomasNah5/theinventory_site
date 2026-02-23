@@ -7,17 +7,16 @@ export default defineNuxtConfig({
     "@nuxt/fonts", 
     "v-gsap-nuxt", 
     "nuxt-anchorscroll", 
-    "nuxt-studio"
   ],
 
-  studio: {
-  repository: {
-    provider: 'github', // 'github' or 'gitlab'
-    owner: 'theinventorylib',
-    repo: 'theinventory_site',
-    branch: 'main'
-  }
-},
+  // studio: {
+  //   repository: {
+  //     provider: 'github', // 'github' or 'gitlab'
+  //     owner: 'theinventorylib',
+  //     repo: 'theinventory_site',
+  //     branch: 'main'
+  //   }
+  // },
 
   css: ["~/assets/css/main.css"],
   

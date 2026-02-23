@@ -2,12 +2,6 @@
   <div class="min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
 
-
-      <div class="max-w-xl mx-auto flex justify-center">
-        <NuxtLink to="/" class="block">
-          <img src="/img/inventory_logo.png" alt="The Inventory" class="w-25" />
-        </NuxtLink>
-      </div>
       <!-- Hero Intro -->
       <div class="max-w-2xl mx-auto pt-10 md:pt-8 mb-20">
         <p class="text-xl md:text-2xl leading-relaxed text-brand-black hero-text">

@@ -108,6 +108,11 @@
     </nav>
 
     <main class="flex-grow pt-28">
+      <div class="max-w-xl mx-auto flex justify-center mb-8">
+        <NuxtLink to="/" class="block">
+          <img src="/img/inventory_logo.png" alt="The Inventory" class="w-25" />
+        </NuxtLink>
+      </div>
       <NuxtPage />
     </main>
 
