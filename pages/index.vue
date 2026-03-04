@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 pb-12">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 pb-12">
 
 
       <div class="max-w-xl mx-auto flex justify-center">
