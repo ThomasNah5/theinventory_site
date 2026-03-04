@@ -20,13 +20,13 @@
 .hero-text {
   font-family: 'Agrandir', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   text-wrap: balance;
 }
 .hero-text-links {
     font-family: 'Agrandir', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     text-wrap: balance;
     text-decoration: underline;
 }
